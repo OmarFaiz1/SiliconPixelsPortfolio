@@ -23,18 +23,19 @@ const ShowCase = () => {
           </div>
           <br />
           <br />
-          <div className="grid-3">
-            {showcase.map((item) => (
-              <div key={item.id} onClick={() => handleCardClick(item.link)}>
-                <Card data={item} caption={item.title} />
-              </div>
-            ))}
-          </div>
+
           {/* <div className="py btn">
             <button className="secondary-button">View More</button>
           </div> */}
         </div>
       </section>
+      <div className="hero-content grid-3 py">
+        {showcase.slice(0, 3).map((item) => (
+          <div key={item.id} onClick={() => handleCardClick(item.link)}>
+            <Card data={item} caption={item.title} />
+          </div>
+        ))}
+      </div>
     </>
   );
 };
