@@ -137,19 +137,19 @@
 }
 
 //blog-card
-.blog-card {
-  .card {
-    @include flex(none, space-between, none);
-    .card-img {
-      width: 40%;
-      height: 250px;
-    }
-    .card-details {
-      width: 55%;
-      padding: $xll 0;
-    }
-  }
-}
+// .blog-card {
+//   .card {
+//     @include flex(none, space-between, none);
+//     .card-img {
+//       width: 40%;
+//       height: 250px;
+//     }
+//     .card-details {
+//       width: 55%;
+//       padding: $xll 0;
+//     }
+//   }
+// }
 
 // footer
 footer {
@@ -326,19 +326,19 @@ footer {
     }
   }
 
-  .blog-card {
-    .card {
-      @include flex(none, none, column);
-      .card-img {
-        width: 100%;
-        height: 300px;
-      }
-      .card-details {
-        width: 100%;
-        padding: 0;
-      }
-    }
-  }
+  // .blog-card {
+  //   .card {
+  //     @include flex(none, none, column);
+  //     .card-img {
+  //       width: 100%;
+  //       height: 300px;
+  //     }
+  //     .card-details {
+  //       width: 100%;
+  //       padding: 0;
+  //     }
+  //   }
+  // }
   .w-30,
   .w-40,
   .w-50,

@@ -337,37 +337,37 @@ export const brand = [
     cover: "../images/l6.svg",
   },
 ];
-export const blogdata = [
-  {
-    id: 1,
-    title: "Ligula vel urna accumsan placerat",
-    cover: "../images/b1.webp",
-    catgeory: "INDUSTRY",
-    date: "JANUARY 12, 2023",
-  },
-  {
-    id: 2,
-    title: "Don’t underestimate the lorem ipsum dolor amet",
-    cover: "../images/b2.jpg",
-    catgeory: "TIPS & TRICKS",
-    date: "OCTOBER 20, 2023",
-  },
-  {
-    id: 3,
-    title:
-      "Building the real VR lorem ipsum dolor amet glavrida from a scratch",
-    cover: "../images/b3.jpg",
-    catgeory: "TIPS & TRICKS",
-    date: "OCTOBER 9, 2023",
-  },
-  {
-    id: 4,
-    title: "What eleifend posuere tincidunt",
-    cover: "../images/b4.jpg",
-    catgeory: "EVENTS",
-    date: "OCTOBER 8, 2023",
-  },
-];
+// export const blogdata = [
+//   {
+//     id: 1,
+//     title: "Ligula vel urna accumsan placerat",
+//     cover: "../images/b1.webp",
+//     catgeory: "INDUSTRY",
+//     date: "JANUARY 12, 2023",
+//   },
+//   {
+//     id: 2,
+//     title: "Don’t underestimate the lorem ipsum dolor amet",
+//     cover: "../images/b2.jpg",
+//     catgeory: "TIPS & TRICKS",
+//     date: "OCTOBER 20, 2023",
+//   },
+//   {
+//     id: 3,
+//     title:
+//       "Building the real VR lorem ipsum dolor amet glavrida from a scratch",
+//     cover: "../images/b3.jpg",
+//     catgeory: "TIPS & TRICKS",
+//     date: "OCTOBER 9, 2023",
+//   },
+//   {
+//     id: 4,
+//     title: "What eleifend posuere tincidunt",
+//     cover: "../images/b4.jpg",
+//     catgeory: "EVENTS",
+//     date: "OCTOBER 8, 2023",
+//   },
+// ];
 export const teamdata = [
   {
     id: 1,
