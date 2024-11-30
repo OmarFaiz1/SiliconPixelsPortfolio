@@ -12,25 +12,32 @@ const ShowCase = () => {
   };
   return (
     <>
-      <section className="showcase">
-        <div className="container">
-          <div className="heading-title">
-            <Title title="Selected cases" />
-          </div>
-          <div className="hero-content grid-3 py">
+      {/* <section className="showcase"> */}
+      <div className="container">
+        <div className="heading-title">
+          <Title title="Selected cases" />
+        </div>
+        {/* <div className="hero-content grid-3 py">
             {showcase.slice(0, 3).map((item) => (
               <div key={item.id} onClick={() => handleCardClick(item.link)}>
                 <Card data={item} caption={item.title} />
               </div>
             ))}
-          </div>
-          <div className="card links ">
+          </div> */}
+        {/* <div className="card links ">
             <Link href="/showcase">
               VIEW ALL PROJECTS <HiOutlineArrowRight className="link-icon" />
             </Link>
+          </div> */}
+      </div>
+      <div className="hero-content grid-3 py">
+        {showcase.slice(0, 3).map((item) => (
+          <div key={item.id} onClick={() => handleCardClick(item.link)}>
+            <Card data={item} caption={item.title} />
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+      {/* </section> */}
     </>
   );
 };
