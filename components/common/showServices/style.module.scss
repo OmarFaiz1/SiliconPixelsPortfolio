@@ -1,0 +1,81 @@
+.container {
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: black;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #6b4f97;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  color: #6b4f97;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Default to 1 column */
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.serviceCard {
+  background-color: rgb(24, 23, 23);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Required for absolute positioning of icon */
+}
+
+.iconContainer {
+  font-size: 2rem;
+  color: #9b57c6;
+  margin-bottom: 1rem;
+}
+
+.serviceTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #9b9393;
+  margin-bottom: 1rem;
+}
+
+.serviceDescription {
+  font-size: 1rem;
+  color: #737373;
+  line-height: 1.5;
+}
+
+/* Top-right icon positioning */
+.topRightIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #9b57c6;
+  cursor: pointer; /* Show pointer cursor when hovering over the icon */
+}
+
+/* Media query for responsive design */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* Display 3 items in a row on medium screens and larger */
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Display 1 item per row on smaller screens */
+  }
+}

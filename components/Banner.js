@@ -1,10 +1,10 @@
-import React from "react"
-import { Title, TitleLogo } from "./common/Title"
+import React from "react";
+import { Title, TitleLogo } from "./common/Title";
 
 const Banner = () => {
   return (
     <>
-      <section className='banner'>
+      {/* <section className='banner'>
         <div className='container'>
           <div>
             <Title title='We are looking forward to start a new project' /> <br />
@@ -14,9 +14,9 @@ const Banner = () => {
             <button className='button-primary'>Request a call-back</button>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;

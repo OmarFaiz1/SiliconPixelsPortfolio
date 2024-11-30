@@ -1,26 +1,37 @@
-import React from "react"
-import { Title } from "./common/Title"
-import { expertise } from "@/assets/data/dummydata"
-import { Card } from "./common/Card"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Title } from "./common/Title";
+import { expertise } from "@/assets/data/dummydata";
+import { Card } from "./common/Card";
+import WebDesignDevelopment from "./expertise/WebDesignDevelopment";
 
 const Expertise = () => {
-  return (
-    <>
-      <section className='expertise'>
-        <div className='container'>
-          <div className='heading-title'>
-            <Title title='Our expertise' />
-            <p>Vivamus a ligula ut velit placerat egestas at id leo. Nulla ac volutpat nunc. Suspendisse ut magna porttitor, sollicitudin ligula at, molestie dolor.</p>
-          </div>
-          <div className='hero-content grid-4'>
-            {expertise.map((item) => (
-              <Card data={item} key={item.id} caption='learn more' />
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
-  )
-}
+  const [isMounted, setIsMounted] = useState(false);
 
-export default Expertise
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
+
+  return (
+    <section className="expertise">
+      <div className="container">
+        <div className="heading-title">
+          <Title title="Our expertise" />
+          <p>
+            At SiliconPixels, we specialize in innovative solutions designed to
+            meet your business needs. Our expert team is committed to delivering
+            high-quality services that help you stay ahead in a competitive
+            market.
+          </p>
+        </div>
+        <WebDesignDevelopment />
+      </div>
+    </section>
+  );
+};
+
+export default Expertise;
