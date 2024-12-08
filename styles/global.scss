@@ -20,21 +20,37 @@
     overflow-x: hidden !important;
   }
   .hero-title {
-    font-size: $xll-3;
-    line-height: 115px;
-    font-weight: 600;
-    margin: $xl-6 0;
+    font-size: $xll - 3; // Default font size for larger screens
+    line-height: 115px; // Default line height for larger screens
+    font-weight: 600; // Default font weight
+    margin: $xl - 6 0; // Default margin
+
+    @media (max-width: 768px) {
+      // Adjust this breakpoint as needed
+      font-size: calc(
+        20px + 3vw
+      ); // Responsive font size for medium and small screens
+      line-height: 1.2; // Adjust line height as needed for better readability
+      margin: 20px 0; // Adjust margin for medium and small screens
+    }
   }
   .sub-heading {
-    display: flex;
+    display: flex; // Default display for larger screens
     justify-content: center;
+
     .titleSm {
-      margin: 0 $xl-1;
+      margin: 0 $xl - 1; // Margin for title
     }
+
     span {
-      font-size: $xll;
-      line-height: 0;
-      color: $green;
+      font-size: $xll; // Font size for span
+      line-height: 0; // Line height for span
+      color: $green; // Color for span
+    }
+
+    @media (max-width: 560px) {
+      // Target screens smaller than 560px
+      display: none; // Hide the sub-heading
     }
   }
 }
@@ -158,9 +174,23 @@ footer {
   border-top: 1px solid rgba($white, 0.2);
   overflow: hidden;
   .logobg {
-    line-height: 0;
-    padding-top: $xl-1;
-    margin-bottom: $xll;
+    font-size: 50px; // Default size for larger screens
+
+    span {
+      font-size: 50px; // Default size for larger screens
+    }
+
+    @media (max-width: 768px) {
+      // Adjust this breakpoint as needed
+      font-size: calc(
+        30px + 2vw
+      ); // Responsive size for medium and small screens
+      span {
+        font-size: calc(
+          20px + 3vw
+        ); // Responsive size for medium and small screens
+      }
+    }
   }
   h3 {
     font-weight: 400;
@@ -182,24 +212,38 @@ footer {
     }
   }
   .connect {
-    @include flex(center, space-between, none);
+    @include flex(
+      center,
+      space-between,
+      none
+    ); // Assuming you have a mixin for flex
+
     span {
-      font-size: $sm;
+      font-size: $sm; // Default font size
       letter-spacing: 2px;
     }
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100% !important;
-    height: 60vh;
-    background-image: url("../assets/images/blurfooter-min.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1;
+
+    // Media query for small screens
+    @media (max-width: 500px) {
+      span {
+        font-size: 10px; // Change this to the desired smaller size variable
+        // You can define $xs in your variables if it's not defined
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100% !important;
+      height: 60vh;
+      background-image: url("../assets/images/blurfooter-min.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: -1;
+    }
   }
 }
 

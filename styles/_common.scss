@@ -11,9 +11,20 @@
   }
 }
 .logobg {
-  font-size: $xll;
+  font-size: 50px; // Default size for larger screens
+
   span {
-    font-size: 50px;
+    font-size: 50px; // Default size for larger screens
+  }
+
+  @media (max-width: 768px) {
+    // Adjust this breakpoint as needed
+    font-size: calc(30px + 2vw); // Responsive size for medium and small screens
+    span {
+      font-size: calc(
+        20px + 3vw
+      ); // Responsive size for medium and small screens
+    }
   }
 }
 .titleSm {

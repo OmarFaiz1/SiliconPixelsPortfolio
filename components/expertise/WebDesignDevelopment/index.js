@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import styles from "./style.module.scss";
-import { showcase } from "../../../assets/data/dummydata";
-// import {webDev,seo,webDesign,AI,uiUX} from '../../../public/images'
 
-const WebDesignDevelopment = () => {
+const Services = () => {
   const [selectedService, setSelectedService] = useState(
     "AI Integration Services"
   );
@@ -54,7 +52,7 @@ const WebDesignDevelopment = () => {
       description:
         "An AI is a software that acts as a communication medium between two or more applications. Our AI integration services allow users to customize their services according to their needs.",
       image:
-        "https://d1krbhyfejrtpz.cloudfront.net/blog/wp-content/uploads/2024/09/13180012/AI-Integration-in-Business-%E2%80%93-Benefits-Use-Cases-and-Process.jpg",
+        "https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4=",
     },
   };
 
@@ -131,4 +129,4 @@ const WebDesignDevelopment = () => {
   );
 };
 
-export default WebDesignDevelopment;
+export default Services;

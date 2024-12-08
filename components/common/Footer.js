@@ -17,7 +17,7 @@ const Footer = () => {
               <TitleLogo title="SiliconPixels" caption="" className="logobg" />
               <br />
               <span>
-                Questions? Reach us <br /> Monday – Friday from 9 am to 6 pm
+                Questions? Reach us at <br />
               </span>
               <br />
               <br />
@@ -107,11 +107,6 @@ const Footer = () => {
           <div className="legal connect py">
             <div className="text">
               <span>© 2023 SILICON PIXELS. ALL RIGHTS RESERVED.</span>
-            </div>
-            <div className="connect">
-              <span>SILICON PIXELS</span>
-              <span> &nbsp; | &nbsp; </span>
-              <span>TERMS & CONDITIONS</span>
             </div>
           </div>
         </div>
